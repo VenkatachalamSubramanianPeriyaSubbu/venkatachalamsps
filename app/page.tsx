@@ -621,10 +621,10 @@ const BlogPage = () => {
 const TestimonialsPage = () => {
   const testimonials = [
     {
-      name: 'Dr. Sarah Johnson',
-      role: 'Professor, University of San Francisco',
-      company: 'USF',
-      text: 'Venkatachalam demonstrates exceptional mastery in AI and machine learning. His ability to bridge theoretical concepts with practical applications is remarkable, and his research contributions have been outstanding.'
+      name: 'Michele Neitz',
+      role: 'Visiting Professor, USF School of Law & Founding Director, Center for Law, Tech, and Social Good',
+      company: 'Center for Law, Tech, and Social Good, USF',
+      text: "Venkat joined the Center for Law, Tech, and Social Good in August 2025 as the Center's first Data Scientist. In that role, he designed and executed data collection and analysis for an empirical study focused on emerging tech state legislation. Venkat is responsive and works well independently. He also looks for ways to streamline research costs by working very effectively. I highly recommend Venkat for any Data Science role!"
     },
     {
       name: 'Michael Chen',
