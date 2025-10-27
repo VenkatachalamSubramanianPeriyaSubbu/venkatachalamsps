@@ -621,22 +621,19 @@ const TestimonialsPage = () => {
       name: 'Dr. Sarah Johnson',
       role: 'Professor, University of San Francisco',
       company: 'USF',
-      text: 'Venkatachalam demonstrates exceptional mastery in AI and machine learning. His ability to bridge theoretical concepts with practical applications is remarkable, and his research contributions have been outstanding.',
-      image: '👩‍🏫'
+      text: 'Venkatachalam demonstrates exceptional mastery in AI and machine learning. His ability to bridge theoretical concepts with practical applications is remarkable, and his research contributions have been outstanding.'
     },
     {
       name: 'Michael Chen',
       role: 'Lead Engineer, ArangoDB',
       company: 'ArangoDB',
-      text: 'Working with Venkatachalam has been a pleasure. His contributions to our LangChain integration significantly improved query performance and his deep understanding of graph databases is impressive.',
-      image: '👨‍💼'
+      text: 'Working with Venkatachalam has been a pleasure. His contributions to our LangChain integration significantly improved query performance and his deep understanding of graph databases is impressive.'
     },
     {
       name: 'Dr. Priya Sharma',
       role: 'Research Director, Environmental Defense Fund',
       company: 'EDF',
-      text: 'Venkatachalam brought exceptional technical skills and creativity to our methane detection project. His computer vision pipeline exceeded our expectations and is now a core part of our research infrastructure.',
-      image: '👩‍🔬'
+      text: 'Venkatachalam brought exceptional technical skills and creativity to our methane detection project. His computer vision pipeline exceeded our expectations and is now a core part of our research infrastructure.'
     }
   ];
 
