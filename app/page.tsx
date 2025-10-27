@@ -659,7 +659,6 @@ const TestimonialsPage = () => {
               className="bg-[#1a1a1a] p-8 rounded-3xl border border-[#00d2be]/20"
             >
               <div className="flex flex-col items-center text-center mb-6">
-                <div className="text-6xl mb-4">{testimonial.image}</div>
                 <h3 className="text-xl font-bold text-[#f5f5f5] mb-1">{testimonial.name}</h3>
                 <p className="text-[#00d2be] text-sm mb-2">{testimonial.role}</p>
                 {/* <CompanyLogo name={testimonial.company} /> */}
