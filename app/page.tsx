@@ -727,7 +727,7 @@ const ContactPage = () => {
               href="https://medium.com/@venkatachalam.sps"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-3 text-[#f5f5f5] hover:text-[#b08d87]"
+              className="flex flex-col items-center gap-3 text-[#f5f5f5] hover:text-[#00d2be]"
             >
               <BookOpen size={40} />
               <span className="text-sm">Medium</span>
