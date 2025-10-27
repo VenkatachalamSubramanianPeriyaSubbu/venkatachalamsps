@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Linkedin, Github, ExternalLink, ArrowUp, BookOpen, Briefcase, GraduationCap, User, FolderOpen, Home, MessageSquare } from 'lucide-react';
 
 // Company and University Logos
-const CompanyLogo = ({ name }) => {
-  const logos = {
+const CompanyLogo = ({ name }: { name: string }) => {
+  const logos: { [key: string]: string } = {
     'ArangoDB': '/arango-logo.webp',
     'USF': '/usf-logo.png',
     'USF Law': '/usf-law-logo.png',
@@ -27,7 +27,7 @@ const CompanyLogo = ({ name }) => {
 };
 
 // Navigation Tabs
-const Navigation = ({ activeTab, setActiveTab }) => {
+const Navigation = ({ activeTab, setActiveTab }: { activeTab: string; setActiveTab: (tab: string) => void }) => {
   const tabs = [
     { id: 'home', label: 'Home', icon: Home },
     { id: 'about', label: 'About', icon: User },
@@ -95,7 +95,7 @@ const Navigation = ({ activeTab, setActiveTab }) => {
 };
 
 // Home Page
-const HomePage = ({ setActiveTab }) => {
+const HomePage = ({ setActiveTab }: { setActiveTab: (tab: string) => void }) => {
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#00d2be]/10 via-transparent to-[#00d2be]/5 animate-pulse" />
@@ -479,8 +479,17 @@ const ProjectsPage = () => {
 };
 
 // Blog Page with Medium RSS Feed
+interface MediumArticle {
+  title: string;
+  link: string;
+  pubDate: string;
+  thumbnail?: string;
+  description?: string;
+  content?: string;
+}
+
 const BlogPage = () => {
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState<MediumArticle[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -503,13 +512,13 @@ const BlogPage = () => {
     fetchMediumArticles();
   }, []);
 
-  const extractImageFromContent = (content) => {
+  const extractImageFromContent = (content: string) => {
     const imgRegex = /<img[^>]+src="([^">]+)"/;
     const match = content.match(imgRegex);
     return match ? match[1] : null;
   };
 
-  const stripHtml = (html) => {
+  const stripHtml = (html: string) => {
     const tmp = document.createElement('div');
     tmp.innerHTML = html;
     return tmp.textContent || tmp.innerText || '';
@@ -545,8 +554,8 @@ const BlogPage = () => {
           <>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {articles.map((article, index) => {
-                const thumbnail = article.thumbnail || extractImageFromContent(article.content);
-                const excerpt = stripHtml(article.description || article.content).slice(0, 150);
+                const thumbnail = article.thumbnail || extractImageFromContent(article.content || '');
+                const excerpt = stripHtml(article.description || article.content || '').slice(0, 150);
                 
                 return (
                   <motion.a
