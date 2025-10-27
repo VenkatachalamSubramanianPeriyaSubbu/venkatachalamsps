@@ -196,10 +196,13 @@ const AboutPage = () => {
                 I am an AI Engineer with experience in Generative AI, Large Language Models, graph databases, and RAG systems. My expertise spans LLM integration, computer vision, deep learning, and applied research.
               </p>
               <p className="text-lg text-[#f5f5f5]/80 leading-relaxed">
-                My work bridges the gap between theory and real world applications, from fine tuning large language models to optimizing data driven decision pipelines. I am passionate about building scalable, explainable AI systems that solve complex problems.
+                I bridge the gap between theory and real-world applications, from fine-tuning large language models to optimizing data-driven decision pipelines. I am passionate about building scalable, explainable AI systems that tackle complex problems.
               </p>
               <p className="text-lg text-[#f5f5f5]/80 leading-relaxed">
-                Currently pursuing my M.S. in Data Science at the University of San Francisco with a perfect 4.0 GPA, I combine rigorous mathematical foundations with cutting edge AI techniques.
+                I hold an M.S. in Data Science from the University of San Francisco, where I combined rigorous mathematical foundations with cutting-edge AI techniques.
+              </p>
+              <p className="text-lg text-[#f5f5f5]/80 leading-relaxed">
+                I am currently working at ArangoDB and USF, contributing to the deployment of AI solutions and driving research-driven impact.
               </p>
             </div>
           </div>
