@@ -628,7 +628,7 @@ const TestimonialsPage = () => {
     },
     {
       name: 'Gopi Maguluri',
-      role: 'Senior AI Engineer',
+      role: 'Senior AI Engineer, Ernst & Young',
       company: 'Ernst & Young',
       text: 'I had the privilege of collaborating with Venkatachalam on several high-impact projects and hackathons, and his technical prowess consistently stood out. His ability to rapidly prototype solutions while maintaining production-quality code is rare. He would be an invaluable asset to any team tackling complex AI/ML challenges.'
     },
