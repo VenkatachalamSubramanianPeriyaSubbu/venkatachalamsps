@@ -627,17 +627,11 @@ const TestimonialsPage = () => {
       text: "Venkat joined the Center for Law, Tech, and Social Good in August 2025 as the Center's first Data Scientist. In that role, he designed and executed data collection and analysis for an empirical study focused on emerging tech state legislation. Venkat is responsive and works well independently. He also looks for ways to streamline research costs by working very effectively. I highly recommend Venkat for any Data Science role!"
     },
     {
-      name: 'Michael Chen',
-      role: 'Lead Engineer, ArangoDB',
-      company: 'ArangoDB',
-      text: 'Working with Venkatachalam has been a pleasure. His contributions to our LangChain integration significantly improved query performance and his deep understanding of graph databases is impressive.'
+      name: 'Gopi Maguluri',
+      role: 'Senior AI Engineer',
+      company: 'Ernst & Young',
+      text: 'I had the privilege of collaborating with Venkatachalam on several high-impact projects and hackathons, and his technical prowess consistently stood out. His ability to rapidly prototype solutions while maintaining production-quality code is rare. He would be an invaluable asset to any team tackling complex AI/ML challenges.'
     },
-    {
-      name: 'Dr. Priya Sharma',
-      role: 'Research Director, Environmental Defense Fund',
-      company: 'EDF',
-      text: 'Venkatachalam brought exceptional technical skills and creativity to our methane detection project. His computer vision pipeline exceeded our expectations and is now a core part of our research infrastructure.'
-    }
   ];
 
   return (
