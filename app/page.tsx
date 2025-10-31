@@ -627,6 +627,12 @@ const TestimonialsPage = () => {
       text: "Venkat joined the Center for Law, Tech, and Social Good in August 2025 as the Center's first Data Scientist. In that role, he designed and executed data collection and analysis for an empirical study focused on emerging tech state legislation. Venkat is responsive and works well independently. He also looks for ways to streamline research costs by working very effectively. I highly recommend Venkat for any Data Science role!"
     },
     {
+      name: 'Sahil Bhandari',
+      role: '(Then) EDF Atkinson Postdoctoral Fellow, Environmental Defense Fund',
+      company: 'Environmental Defense Fund',
+      text: "During my postdoctoral stint at EDF, I worked with Venkat on a project estimating contributions of methane emissions from different sources. Venkat was an exceptional mentee; with his talent, persistence, and hard-work, he opened doors even I hadn't conceived of. I am very confident about his data science skills and believe he is a bright star waiting to be tapped into!"
+    },
+    {
       name: 'Gopi Maguluri',
       role: 'Senior AI Engineer, Ernst & Young',
       company: 'Ernst & Young',
