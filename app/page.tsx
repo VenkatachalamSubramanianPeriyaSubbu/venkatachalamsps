@@ -638,6 +638,12 @@ const TestimonialsPage = () => {
       company: 'Ernst & Young',
       text: 'I had the privilege of collaborating with Venkatachalam on several high-impact projects and hackathons, and his technical prowess consistently stood out. His ability to rapidly prototype solutions while maintaining production-quality code is rare. He would be an invaluable asset to any team tackling complex AI/ML challenges.'
     },
+    {
+      name: '',
+      role: 'Methane Scientist, Environmental Defense Fund',
+      company: 'Environmental Defense Fund',
+      text: 'Working with Venkat was great. He took note of the various tasks assigned during our periodic meetings, and I always had confidence that he was working on his tasks.'
+    }
   ];
 
   return (
