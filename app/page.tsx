@@ -193,7 +193,7 @@ const AboutPage = () => {
 
             <div className="space-y-6">
               <p className="text-lg text-[#f5f5f5]/80 leading-relaxed">
-                I am an AI Engineer with experience in Generative AI, Large Language Models, graph databases, and RAG systems. My expertise spans LLM integration, computer vision, deep learning, and applied research.
+                I am an AI Engineer with experience in Generative AI, Large Language Models, graph and no-sql databases, and RAG systems. My expertise spans LLM integration, computer vision, deep learning, and applied research.
               </p>
               <p className="text-lg text-[#f5f5f5]/80 leading-relaxed">
                 I bridge the gap between theory and real-world applications, from fine-tuning large language models to optimizing data-driven decision pipelines. I am passionate about building scalable, explainable AI systems that tackle complex problems.
@@ -203,6 +203,9 @@ const AboutPage = () => {
               </p>
               <p className="text-lg text-[#f5f5f5]/80 leading-relaxed">
                 I am currently working at ArangoDB and USF, contributing to the deployment of AI solutions and driving research-driven impact.
+              </p>
+              <p className="text-lg text-[#f5f5f5]/80 leading-relaxed">
+                When I'm not building AI systems, I enjoy following cricket, tennis, Formula 1, and chess—activities that combine strategic thinking, precision, and the thrill of competition.
               </p>
             </div>
           </div>
@@ -280,15 +283,26 @@ const EducationPage = () => {
 const ExperiencePage = () => {
   const experiences = [
     {
+      title: 'Forward Deployed Engineer',
+      company: 'ArangoDB',
+      shortName: 'ArangoDB',
+      location: 'San Francisco Bay Area · Remote',
+      duration: 'Jan 2026 to Present · 1 mo',
+      bullets: [
+        'Collaborating directly with enterprise customers including NVIDIA and Zscaler to architect and deploy cutting-edge graph-based solutions that solve complex data challenges at scale'
+      ]
+    },
+    {
       title: 'AI Engineer',
       company: 'ArangoDB',
       shortName: 'ArangoDB',
-      location: 'San Francisco, CA',
-      duration: 'Aug 2025 to Present',
+      location: 'San Francisco Bay Area · Remote',
+      duration: 'Aug 2025 to Dec 2025 · 5 mos',
       bullets: [
-        'Contributed to the open source LangChain ArangoDB package by extending the schema with index metadata, enabling optimized AQL queries and LLM powered retrieval that improved accuracy and reduced average query latency by 25% as an intern',
-        'Implemented advanced similarity search strategies including Jaccard, Dot Product, and Max Inner Product in ArangoVector, improving top k retrieval accuracy by 18% on benchmark datasets compared to cosine similarity',
-        'Enhanced SmartGraphs data partitioning to distribute data across user specified servers, enabling horizontal scaling to 5+ nodes and supporting fine grained RBAC for graphs with 100K+ nodes'
+        'Developed features and bug fixes in Python for ArangoDB\'s official LangChain integration, reaching 50k downloads on PyPi',
+        'Introduced advanced similarity search strategies (Jaccard, Dot Product, Max Inner Product) in ArangoVector',
+        'Enhanced the GraphRAG importer service by introducing a Relationship Types parameter, enabling more precise representation of graph structures',
+        'Founding engineer of ArangoDB\'s internal Knowledge Enablement tool using Python, GraphRAG techniques, and the Slack SDK, providing real-time knowledge enablement to +100 employees'
       ]
     },
     {
