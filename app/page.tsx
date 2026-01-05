@@ -287,7 +287,7 @@ const ExperiencePage = () => {
       company: 'ArangoDB',
       shortName: 'ArangoDB',
       location: 'San Francisco Bay Area · Remote',
-      duration: 'Jan 2026 to Present · 1 mo',
+      duration: 'Jan 2026 to Present',
       bullets: [
         'Collaborating directly with enterprise customers including NVIDIA and Zscaler to architect and deploy cutting-edge graph-based solutions that solve complex data challenges at scale'
       ]
@@ -297,7 +297,7 @@ const ExperiencePage = () => {
       company: 'ArangoDB',
       shortName: 'ArangoDB',
       location: 'San Francisco Bay Area · Remote',
-      duration: 'Aug 2025 to Dec 2025 · 5 mos',
+      duration: 'Aug 2025 to Dec 2025',
       bullets: [
         'Developed features and bug fixes in Python for ArangoDB\'s official LangChain integration, reaching 50k downloads on PyPi',
         'Introduced advanced similarity search strategies (Jaccard, Dot Product, Max Inner Product) in ArangoVector',
