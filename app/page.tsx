@@ -286,7 +286,7 @@ const ExperiencePage = () => {
       title: 'Forward Deployed Engineer',
       company: 'ArangoDB',
       shortName: 'ArangoDB',
-      location: 'San Francisco Bay Area · Remote',
+      location: 'San Francisco Bay Area',
       duration: 'Jan 2026 to Present',
       bullets: [
         'Collaborating directly with enterprise customers including NVIDIA and Zscaler to architect and deploy cutting-edge graph-based solutions that solve complex data challenges at scale'
@@ -296,7 +296,7 @@ const ExperiencePage = () => {
       title: 'AI Engineer Intern',
       company: 'ArangoDB',
       shortName: 'ArangoDB',
-      location: 'San Francisco Bay Area · Remote',
+      location: 'San Francisco Bay Area',
       duration: 'Aug 2025 to Dec 2025',
       bullets: [
         'Developed features and bug fixes in Python for ArangoDB\'s official LangChain integration, reaching 50k downloads on PyPi',
@@ -309,7 +309,7 @@ const ExperiencePage = () => {
       title: 'Research Data Scientist',
       company: 'University of San Francisco - Center for Law, Tech and Social Good',
       shortName: 'USF Law',
-      location: 'San Francisco, CA',
+      location: 'San Francisco Bay Area',
       duration: 'Aug 2025 to Present',
       bullets: [
         'Collected and analyzed 100+ state blockchain and AI statutes, 50+ legislative histories, and 20+ working group reports into a structured legal dataset',
@@ -321,7 +321,7 @@ const ExperiencePage = () => {
       title: 'Data Scientist Intern',
       company: 'Environmental Defense Fund',
       shortName: 'EDF',
-      location: 'San Francisco, CA',
+      location: 'San Francisco Bay Area',
       duration: 'October 2024 to June 2025',
       bullets: [
         'Built Python ETL pipeline to process 100+ scientific documents, reducing processing time by 90%',
