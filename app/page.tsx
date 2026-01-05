@@ -293,7 +293,7 @@ const ExperiencePage = () => {
       ]
     },
     {
-      title: 'AI Engineer',
+      title: 'AI Engineer Intern',
       company: 'ArangoDB',
       shortName: 'ArangoDB',
       location: 'San Francisco Bay Area · Remote',
@@ -318,7 +318,7 @@ const ExperiencePage = () => {
       ]
     },
     {
-      title: 'Data Scientist',
+      title: 'Data Scientist Intern',
       company: 'Environmental Defense Fund',
       shortName: 'EDF',
       location: 'San Francisco, CA',
