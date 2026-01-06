@@ -402,6 +402,7 @@ interface Publication {
   venue: string;
   year: string;
   link?: string;
+  docsLink?: string;
   description?: string;
 }
 
@@ -413,7 +414,8 @@ const PublicationsPage = () => {
       venue: 'PyPI',
       year: '2025',
       link: 'https://pypi.org/project/nbctl/',
-      description: 'A comprehensive, modern CLI toolkit that solves all major Jupyter notebook pain points in one unified interface. Features include notebook cleaning, formatting, linting, security scanning, ML pipeline generation, and more. Documentation: https://venkatachalamsubramanianperiyasubbu.github.io/nbctl/'
+      docsLink: 'https://venkatachalamsubramanianperiyasubbu.github.io/nbctl/',
+      description: 'A comprehensive, modern CLI toolkit that solves all major Jupyter notebook pain points in one unified interface. Features include notebook cleaning, formatting, linting, security scanning, ML pipeline generation, and more.'
     },
     {
       title: 'deployml-core',
@@ -421,7 +423,8 @@ const PublicationsPage = () => {
       venue: 'PyPI',
       year: '2025-2026',
       link: 'https://pypi.org/project/deployml-core/',
-      description: 'A Python library for deploying an end-to-end machine learning operations (MLOps) infrastructure in the cloud. Features infrastructure as code with Terraform, cost analysis integration, multi-cloud support (GCP, AWS), MLflow pre-configuration, and production-ready security practices. Documentation: https://deployml-core.github.io/deployml/'
+      docsLink: 'https://deployml-core.github.io/deployml/',
+      description: 'A Python library for deploying an end-to-end machine learning operations (MLOps) infrastructure in the cloud. Features infrastructure as code with Terraform, cost analysis integration, multi-cloud support (GCP, AWS), MLflow pre-configuration, and production-ready security practices.'
     }
   ];
 
@@ -468,18 +471,32 @@ const PublicationsPage = () => {
                       <p className="text-[#f5f5f5]/70 mt-4">{pub.description}</p>
                     )}
                   </div>
-                  {pub.link && (
-                    <motion.a
-                      href={pub.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.1 }}
-                      className="text-[#00d2be] hover:text-[#00d2be]/80 flex items-center gap-2"
-                    >
-                      <ExternalLink size={20} />
-                      <span>View</span>
-                    </motion.a>
-                  )}
+                  <div className="flex flex-col gap-3 items-start md:items-end">
+                    {pub.link && (
+                      <motion.a
+                        href={pub.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        className="text-[#00d2be] hover:text-[#00d2be]/80 flex items-center gap-2"
+                      >
+                        <ExternalLink size={20} />
+                        <span>PyPI</span>
+                      </motion.a>
+                    )}
+                    {pub.docsLink && (
+                      <motion.a
+                        href={pub.docsLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        className="text-[#00d2be] hover:text-[#00d2be]/80 flex items-center gap-2"
+                      >
+                        <ExternalLink size={20} />
+                        <span>Documentation</span>
+                      </motion.a>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}
