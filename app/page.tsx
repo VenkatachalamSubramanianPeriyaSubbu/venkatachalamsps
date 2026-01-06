@@ -417,7 +417,7 @@ const PublicationsPage = () => {
     },
     {
       title: 'deployml-core',
-      authors: 'Drew Hoang, Grant Nitta', 'Venkatachalam S Periya Subbu','Robert Clements', 'Jarvin Bayona' ,
+      authors: 'Drew Hoang, Grant Nitta, Venkatachalam S Periya Subbu, Robert Clements, Jarvin Bayona',
       venue: 'PyPI',
       year: '2025-2026',
       link: 'https://pypi.org/project/deployml-core/',
