@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Linkedin, Github, ExternalLink, ArrowUp, BookOpen, Briefcase, GraduationCap, User, FolderOpen, Home, MessageSquare } from 'lucide-react';
+import { Mail, Linkedin, Github, ExternalLink, ArrowUp, BookOpen, Briefcase, GraduationCap, User, FolderOpen, Home, MessageSquare, FileText } from 'lucide-react';
 
 // Company and University Logos
 const CompanyLogo = ({ name }: { name: string }) => {
@@ -33,6 +33,7 @@ const Navigation = ({ activeTab, setActiveTab }: { activeTab: string; setActiveT
     { id: 'about', label: 'About', icon: User },
     { id: 'education', label: 'Education', icon: GraduationCap },
     { id: 'experience', label: 'Experience', icon: Briefcase },
+    { id: 'publications', label: 'Publications', icon: FileText },
     { id: 'projects', label: 'Projects', icon: FolderOpen },
     { id: 'blog', label: 'Blog', icon: BookOpen },
     { id: 'testimonials', label: 'Testimonials', icon: MessageSquare },
@@ -389,6 +390,101 @@ const ExperiencePage = () => {
             </motion.div>
           ))}
         </div>
+      </div>
+    </div>
+  );
+};
+
+// Publications Page
+interface Publication {
+  title: string;
+  authors: string;
+  venue: string;
+  year: string;
+  link?: string;
+  description?: string;
+}
+
+const PublicationsPage = () => {
+  const publications: Publication[] = [
+    {
+      title: 'nbctl',
+      authors: 'Venkatachalam S Periya Subbu',
+      venue: 'PyPI',
+      year: '2025',
+      link: 'https://pypi.org/project/nbctl/',
+      description: 'A comprehensive, modern CLI toolkit that solves all major Jupyter notebook pain points in one unified interface. Features include notebook cleaning, formatting, linting, security scanning, ML pipeline generation, and more. Documentation: https://venkatachalamsubramanianperiyasubbu.github.io/nbctl/'
+    },
+    {
+      title: 'deployml-core',
+      authors: 'Drew Hoang, Grant Nitta', 'Venkatachalam S Periya Subbu','Robert Clements', 'Jarvin Bayona' ,
+      venue: 'PyPI',
+      year: '2025-2026',
+      link: 'https://pypi.org/project/deployml-core/',
+      description: 'A Python library for deploying an end-to-end machine learning operations (MLOps) infrastructure in the cloud. Features infrastructure as code with Terraform, cost analysis integration, multi-cloud support (GCP, AWS), MLflow pre-configuration, and production-ready security practices. Documentation: https://deployml-core.github.io/deployml/'
+    }
+  ];
+
+  return (
+    <div className="py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-4xl md:text-5xl font-bold text-[#f5f5f5] mb-16"
+        >
+          <span className="text-[#00d2be]">Publications</span>
+        </motion.h2>
+
+        {publications.length === 0 ? (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="bg-[#1a1a1a] p-12 rounded-3xl border border-[#00d2be]/20 text-center"
+          >
+            <FileText size={64} className="mx-auto mb-6 text-[#00d2be]/50" />
+            <p className="text-xl text-[#f5f5f5]/70 mb-4">No publications yet</p>
+            <p className="text-[#f5f5f5]/50">
+              Publications will be displayed here once added.
+            </p>
+          </motion.div>
+        ) : (
+          <div className="space-y-8">
+            {publications.map((pub, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.01, boxShadow: '0 10px 40px rgba(0, 210, 190, 0.2)' }}
+                className="bg-[#1a1a1a] p-8 rounded-3xl border border-[#00d2be]/20"
+              >
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-[#f5f5f5] mb-2">{pub.title}</h3>
+                    <p className="text-[#f5f5f5]/80 mb-2">{pub.authors}</p>
+                    <p className="text-[#00d2be] text-lg mb-2">{pub.venue} • {pub.year}</p>
+                    {pub.description && (
+                      <p className="text-[#f5f5f5]/70 mt-4">{pub.description}</p>
+                    )}
+                  </div>
+                  {pub.link && (
+                    <motion.a
+                      href={pub.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.1 }}
+                      className="text-[#00d2be] hover:text-[#00d2be]/80 flex items-center gap-2"
+                    >
+                      <ExternalLink size={20} />
+                      <span>View</span>
+                    </motion.a>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -822,6 +918,8 @@ export default function Portfolio() {
         return <EducationPage />;
       case 'experience':
         return <ExperiencePage />;
+      case 'publications':
+        return <PublicationsPage />;
       case 'projects':
         return <ProjectsPage />;
       case 'blog':
